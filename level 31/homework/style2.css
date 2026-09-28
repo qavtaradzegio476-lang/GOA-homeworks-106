@@ -1,0 +1,26 @@
+/* External CSS */
+
+/* 1. ტექსტის ფერი */
+.external1 {
+    color: blue;
+}
+
+/* 2. ფონის ფერი */
+.external2 {
+    background-color: yellow;
+}
+
+/* 3. ტექსტის გასწორება */
+.external3 {
+    text-align: center;
+}
+
+/* 4. ტექსტის ზომა */
+.external4 {
+    font-size: 25px;
+}
+
+/* 5. ტექსტის ფერი */
+.external5 {
+    color: green;
+}

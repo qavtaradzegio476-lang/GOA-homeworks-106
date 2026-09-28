@@ -1,0 +1,84 @@
+<!--  შექმენით მშობელი და შვილი დივბლოკები, გამოიყენეთ ნასწავლი კუთვნილებები: width, height, padding, margin და bottom. მოსინჯეთ სხვაადსხვა
+   ვარიანტები და შეამოწმეთ შედეგი რა როგორ იმუშავებს (გააკეთეთ ექსპერიმენტები)
+
+საბოლოოდ ახსენით კომენტარებით რა არის content, padding, border და margin -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+
+        /* 
+        CONTENT - არის თვითონ ელემენტის შიგთავსი.
+        მაგალითად, ქვემოთ "ეს არის შვილი div" არის content.
+        */
+
+        /* 
+        PADDING - არის სივრცე content-სა და border-ს შორის.
+        ანუ ელემენტის შიგნით ტოვებს ადგილს.
+        */
+
+        /* 
+        BORDER - არის ელემენტის ჩარჩო.
+        */
+
+        /* 
+        MARGIN - არის სივრცე ელემენტის გარეთ.
+        ის ელემენტს სხვა ელემენტებისგან აშორებს.
+        */
+
+        /* მშობელი div */
+        .parent {
+            width: 400px;
+            height: 300px;
+
+            background-color: lightblue;
+
+            padding: 20px;
+
+            border: 5px solid blue;
+
+            margin: 30px;
+
+            margin-bottom: 50px;
+        }
+
+
+        /* შვილი div */
+        .child {
+            width: 200px;
+            height: 100px;
+
+            background-color: lightgreen;
+
+            padding: 20px;
+
+            border: 3px solid green;
+
+            margin: 20px;
+
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- მშობელი div -->
+    <div class="parent">
+
+        <!-- შვილი div -->
+        <div class="child">
+            <!-- ეს ტექსტი არის CONTENT -->
+            ეს არის შვილი div
+        </div>
+
+    </div>
+
+</body>
+</html>

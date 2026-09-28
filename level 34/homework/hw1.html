@@ -1,0 +1,466 @@
+<!--  გააკეთეთ პრეზენტაცია CSS Box Model-ის შესახებ.
+
+პრეზენტაციაში დეტალურად ისაუბრეთ შემდეგ საკითხებზე:
+
+- რა არის Box Model და როგორ მუშაობს იგი;
+- Content - ელემენტის შიგთავსი;
+- Padding - შიდა დაშორება;
+- Border - ელემენტის საზღვარი;
+- Margin - გარე დაშორება;
+- რა განსხვავებაა content-box-სა და border-box-ს შორის;
+- ახსენით, როგორ იცვლება ელემენტის საბოლოო ზომა content-box-ისა და border-box-ის გამოყენებისას;
+
+შეგიძლიათ გამოიყენოთ შემდეგი ვებ საიტი ინფორმაციის მოსაძიებლად - https://www.w3schools.com/css/css_boxmodel.asp -->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #101827;
+            color: white;
+        }
+
+        .slide {
+            min-height: 100vh;
+            padding: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 3px solid #2f80ed;
+        }
+
+        h1 {
+            font-size: 55px;
+            color: #4da3ff;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 45px;
+            color: #4da3ff;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 1.7;
+            max-width: 900px;
+        }
+
+        ul {
+            text-align: left;
+            font-size: 22px;
+            line-height: 2;
+        }
+
+        .box {
+            width: 500px;
+            padding: 40px;
+            border: 8px solid #4da3ff;
+            margin: 30px;
+            background-color: #1f2937;
+        }
+
+        .content {
+            background-color: #374151;
+            padding: 30px;
+        }
+
+        .code {
+            background-color: #050b14;
+            color: #7dd3fc;
+            padding: 25px;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .comparison {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 400px;
+            padding: 30px;
+            background-color: #1f2937;
+            border: 2px solid #4da3ff;
+            border-radius: 15px;
+        }
+
+        .card h3 {
+            color: #4da3ff;
+            font-size: 30px;
+        }
+
+        .number {
+            color: #fbbf24;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            background-color: #080d16;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Slide 1 -->
+    <section class="slide">
+        <h1>CSS Box Model</h1>
+
+        <p>
+            CSS Box Model არის CSS-ის მნიშვნელოვანი კონცეფცია,
+            რომელიც გვიჩვენებს, როგორ არის HTML ელემენტი აგებული
+            და რამდენ ადგილს იკავებს ვებგვერდზე.
+        </p>
+
+        <p>
+            Content → Padding → Border → Margin
+        </p>
+    </section>
+
+
+    <!-- Slide 2 -->
+    <section class="slide">
+
+        <h2>რა არის Box Model?</h2>
+
+        <p>
+            ყველა HTML ელემენტი შეიძლება წარმოვიდგინოთ
+            როგორც ყუთი.
+        </p>
+
+        <div class="box">
+
+            <div class="content">
+                Content
+            </div>
+
+        </div>
+
+        <p>
+            Box Model შედგება ოთხი ძირითადი ნაწილისგან:
+        </p>
+
+        <ul>
+            <li>Content</li>
+            <li>Padding</li>
+            <li>Border</li>
+            <li>Margin</li>
+        </ul>
+
+    </section>
+
+
+    <!-- Slide 3 -->
+    <section class="slide">
+
+        <h2>Content</h2>
+
+        <p>
+            Content არის ელემენტის მთავარი შიგთავსი.
+        </p>
+
+        <p>
+            Content-ში შეიძლება იყოს ტექსტი, სურათი,
+            ღილაკი ან სხვა HTML ელემენტი.
+        </p>
+
+        <div class="code">
+            width: 300px;<br>
+            height: 100px;
+        </div>
+
+    </section>
+
+
+    <!-- Slide 4 -->
+    <section class="slide">
+
+        <h2>Padding</h2>
+
+        <p>
+            Padding არის სივრცე Content-სა და Border-ს შორის.
+        </p>
+
+        <p>
+            Padding ქმნის შიდა დაშორებას.
+        </p>
+
+        <div class="code">
+            padding: 20px;
+        </div>
+
+        <p>
+            რაც უფრო დიდია Padding, მით უფრო მეტი
+            სივრცეა Content-ის გარშემო, ელემენტის შიგნით.
+        </p>
+
+    </section>
+
+
+    <!-- Slide 5 -->
+    <section class="slide">
+
+        <h2>Border</h2>
+
+        <p>
+            Border არის ელემენტის საზღვარი.
+        </p>
+
+        <div class="code">
+            border: 5px solid black;
+        </div>
+
+        <ul>
+            <li>5px — საზღვრის სისქე</li>
+            <li>solid — საზღვრის ტიპი</li>
+            <li>black — საზღვრის ფერი</li>
+        </ul>
+
+    </section>
+
+
+    <!-- Slide 6 -->
+    <section class="slide">
+
+        <h2>Margin</h2>
+
+        <p>
+            Margin არის სივრცე ელემენტის გარეთ.
+        </p>
+
+        <p>
+            ის ქმნის დაშორებას ელემენტსა და
+            სხვა ელემენტებს შორის.
+        </p>
+
+        <div class="code">
+            margin: 20px;
+        </div>
+
+        <p>
+            მარტივად:
+            <br><br>
+            Padding = შიგნით
+            <br>
+            Margin = გარეთ
+        </p>
+
+    </section>
+
+
+    <!-- Slide 7 -->
+    <section class="slide">
+
+        <h2>Content-box</h2>
+
+        <p>
+            content-box არის Box Model-ის ნაგულისხმევი მნიშვნელობა.
+        </p>
+
+        <p>
+            ამ შემთხვევაში width და height ეხება
+            მხოლოდ Content-ს.
+        </p>
+
+        <div class="code">
+            box-sizing: content-box;<br>
+            width: 300px;<br>
+            padding: 20px;<br>
+            border: 5px solid black;
+        </div>
+
+        <p>
+            საბოლოო სიგანე:
+        </p>
+
+        <div class="number">
+            300 + 40 + 10 = 350px
+        </div>
+
+    </section>
+
+
+    <!-- Slide 8 -->
+    <section class="slide">
+
+        <h2>Border-box</h2>
+
+        <p>
+            border-box-ის დროს width და height უკვე
+            მოიცავს Content-ს, Padding-ს და Border-ს.
+        </p>
+
+        <div class="code">
+            box-sizing: border-box;<br>
+            width: 300px;<br>
+            padding: 20px;<br>
+            border: 5px solid black;
+        </div>
+
+        <p>
+            საბოლოო სიგანე:
+        </p>
+
+        <div class="number">
+            300px
+        </div>
+
+    </section>
+
+
+    <!-- Slide 9 -->
+    <section class="slide">
+
+        <h2>Content-box vs Border-box</h2>
+
+        <div class="comparison">
+
+            <div class="card">
+
+                <h3>Content-box</h3>
+
+                <p>
+                    Width მოიცავს მხოლოდ Content-ს.
+                </p>
+
+                <p>
+                    Padding და Border ემატება
+                    საბოლოო ზომას.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Border-box</h3>
+
+                <p>
+                    Width მოიცავს Content-ს,
+                    Padding-ს და Border-ს.
+                </p>
+
+                <p>
+                    საბოლოო ზომა რჩება
+                    მითითებული Width-ის ფარგლებში.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Slide 10 -->
+    <section class="slide">
+
+        <h2>საბოლოო ზომის მაგალითი</h2>
+
+        <p>
+            გვაქვს:
+        </p>
+
+        <div class="code">
+            width: 300px;<br>
+            padding: 20px;<br>
+            border: 5px solid black;
+        </div>
+
+        <div class="comparison">
+
+            <div class="card">
+
+                <h3>Content-box</h3>
+
+                <p>
+                    300 + 40 + 10
+                </p>
+
+                <div class="number">
+                    350px
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Border-box</h3>
+
+                <p>
+                    Padding და Border შედის 300px-ში
+                </p>
+
+                <div class="number">
+                    300px
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Slide 11 -->
+    <section class="slide">
+
+        <h2>დასკვნა</h2>
+
+        <p>
+            CSS Box Model-ის ოთხი ძირითადი ნაწილია:
+        </p>
+
+        <h2>
+            Content → Padding → Border → Margin
+        </h2>
+
+        <p>
+            Content არის შიგთავსი.
+            <br>
+            Padding არის შიდა დაშორება.
+            <br>
+            Border არის საზღვარი.
+            <br>
+            Margin არის გარე დაშორება.
+        </p>
+
+        <p>
+            content-box-ში Padding და Border ემატება ზომას,
+            ხოლო border-box-ში ისინი უკვე შედის მითითებულ ზომაში.
+        </p>
+
+    </section>
+
+
+    <footer>
+        <p>CSS Box Model Presentation</p>
+    </footer>
+
+</body>
+</html>

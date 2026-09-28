@@ -1,0 +1,82 @@
+<!-- 2) შექმენით მაქსიმალურად მსგავსი პროდუქტის card-ი. საბოლოოდ დეტალურად ახსენით box model-ის შემადგენლობა (content, padding, border და 
+ margin)
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+
+    <style>
+        body {
+            background-color: #18181f;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 200px;
+
+            /* Box Model */
+            padding: 15px;
+            border: 3px solid white;
+            margin: 30px;
+
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h2 {
+            font-size: 16px;
+            margin: 15px 0 10px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 5px 0 15px;
+        }
+
+        .old-price {
+            font-size: 12px;
+            color: gray;
+            text-decoration: line-through;
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            border: 0;
+            border-radius: 5px;
+            background-color: #101027;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Nike Shoes">
+
+        <h2>Nike Air MX Super 2500 - Red</h2>
+
+        <p class="price">
+            $449
+            <span class="old-price">$599</span>
+        </p>
+
+        <button class="button"> Add to cart</button>
+
+    </div>
+
+</body>
+</html>

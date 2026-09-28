@@ -1,0 +1,207 @@
+<!--  შექმენით ვებ-საიტი სასტუმროს თემატიკაზე და ლამაზად გააფორმეთ მთლიანი ვებ-საიტი.
+
+ვებ-საიტზე აუცილებლად უნდა გქონდეთ:
+
+- მინიმუმ 5 სასტუმროს ფოტო
+- თითოეული სასტუმროს სახელწოდება
+- თითოეული სასტუმროს აღწერა
+- თითოეული სასტუმროს ფასი
+- თითოეული სასტუმროს რეიტინგი 0-დან 5-მდე
+- საიტი უნდა იყოს ლამაზად და ერთიან სტილში გასტილული
+- ფერების გაწერისას შეეცადეთ გამოიყენოთ RGB ან HEX კოდები (მაგ: rgb(34, 139, 34) ან #228B22)
+
+შეეცადეთ, რომ სასტუმროების ინფორმაცია საიტზე მოწესრიგებულად და ვიზუალურად ლამაზად იყოს წარმოდგენილი.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotels</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+            color: #222222;
+        }
+
+        header {
+            background-color: #12344d;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .hotels {
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .hotel {
+            background-color: white;
+            width: 330px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .hotel img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .hotel-info {
+            padding: 20px;
+        }
+
+        .hotel h2 {
+            color: #12344d;
+            margin-top: 0;
+        }
+
+        .hotel p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .price {
+            color: #228b22;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .rating {
+            color: #d99b00;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #12344d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Luxury Hotels</h1>
+        <p>აღმოაჩინე საუკეთესო სასტუმროები და აირჩიე შენთვის სასურველი</p>
+    </header>
+
+    <main class="hotels">
+
+        <div class="hotel">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80">
+
+            <div class="hotel-info">
+                <h2>Grand Palace Hotel</h2>
+
+                <p>
+                    ლამაზი და კომფორტული სასტუმრო ქალაქის ცენტრში.
+                    სასტუმროს აქვს თანამედროვე ოთახები, რესტორანი
+                    და ულამაზესი ხედები.
+                </p>
+
+                <p class="price">ფასი: 250₾ / ღამე</p>
+                <p class="rating">რეიტინგი: 4.8 / 5 ★</p>
+            </div>
+        </div>
+
+
+        <div class="hotel">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80">
+
+            <div class="hotel-info">
+                <h2>Royal Mountain Hotel</h2>
+
+                <p>
+                    იდეალური სასტუმრო მათთვის, ვისაც მთების
+                    ულამაზესი ხედები და მშვიდი გარემო უყვარს.
+                    ოთახები თანამედროვე და კომფორტულია.
+                </p>
+
+                <p class="price">ფასი: 320₾ / ღამე</p>
+                <p class="rating">რეიტინგი: 4.9 / 5 ★</p>
+            </div>
+        </div>
+
+
+        <div class="hotel">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80">
+
+            <div class="hotel-info">
+                <h2>Ocean View Resort</h2>
+
+                <p>
+                    ზღვის პირას მდებარე თანამედროვე სასტუმრო,
+                    რომელიც გამოირჩევა ულამაზესი ხედებით,
+                    დიდი აუზითა და კომფორტული ოთახებით.
+                </p>
+
+                <p class="price">ფასი: 400₾ / ღამე</p>
+                <p class="rating">რეიტინგი: 4.7 / 5 ★</p>
+            </div>
+        </div>
+
+
+        <div class="hotel">
+            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80">
+
+            <div class="hotel-info">
+                <h2>Royal Garden Hotel</h2>
+
+                <p>
+                    მყუდრო სასტუმრო დიდი მწვანე ბაღით.
+                    აქ შეგიძლიათ დაისვენოთ მშვიდ გარემოში
+                    და ისარგებლოთ თანამედროვე სერვისებით.
+                </p>
+
+                <p class="price">ფასი: 280₾ / ღამე</p>
+                <p class="rating">რეიტინგი: 4.6 / 5 ★</p>
+            </div>
+        </div>
+
+
+        <div class="hotel">
+            <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80">
+
+            <div class="hotel-info">
+                <h2>Luxury Grand Hotel</h2>
+
+                <p>
+                    მაღალი კლასის სასტუმრო თანამედროვე დიზაინით.
+                    სასტუმროში დაგხვდებათ კომფორტული ოთახები,
+                    რესტორანი და დასასვენებელი სივრცეები.
+                </p>
+
+                <p class="price">ფასი: 500₾ / ღამე</p>
+                <p class="rating">რეიტინგი: 5.0 / 5 ★</p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!-- 2) შექმენით მრავალგვერდიანი ვებ-საიტი მხოლოდ HTML-ისა და Inline CSS-ის გამოყენებით (style ატრიბუტის).
+
+საიტს უნდა ჰქონდეს მინიმუმ 3 გვერდი:
+
+1. მთავარი გვერდი
+2. ინფორმაციის/პროდუქტების გვერდი
+3. საკონტაქტო გვერდი
+
+აუცილებლად გამოიყენეთ:
+
+- <header>, <main>, <footer> და <section>;
+- გვერდებს შორის ნავიგაცია <a>-ებით;
+- <ul> და <ol> სიები;
+- <form> საკონტაქტო ფორმისთვის;
+- Inline CSS (style ატრიბუტი): color, background-color, text-align, font-size;
+
+თემა თქვენ თვითონ აირჩიეთ - მაგალითად, რესტორანი, ონლაინ მაღაზია, სპორტული კლუბი, ტურისტული სააგენტო და ა.შ. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Shop</title>
+</head>
+
+<body style="background-color: lightgray; color: black;">
+
+    <header style="background-color: black; color: white; text-align: center;">
+
+        <h1 style="font-size: 40px;">
+            Sneaker Shop
+        </h1>
+
+        <nav>
+            <a href="hw2.html" style="color: white; font-size: 18px;">
+                Home
+            </a>
+
+            &nbsp;&nbsp;
+
+            <a href="products.html" style="color: white; font-size: 18px;">
+                Products
+            </a>
+
+            &nbsp;&nbsp;
+
+            <a href="contact.html" style="color: white; font-size: 18px;">
+                Contact
+            </a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section style="background-color: lightgray; text-align: center;">
+
+            <h2 style="font-size: 30px; color: black;">
+                Welcome to Sneaker Shop
+            </h2>
+
+            <p style="font-size: 20px;">
+                Welcome to our sneaker store.
+            </p>
+
+            <p style="font-size: 18px;">
+                Here you can find different styles of sneakers.
+            </p>
+
+        </section>
+
+
+        <section style="background-color: white; text-align: center;">
+
+            <h2 style="font-size: 28px; color: black;">
+                Why Choose Us?
+            </h2>
+
+            <ul style="font-size: 18px; text-align: left;">
+
+                <li>Good quality</li>
+                <li>Modern design</li>
+                <li>Good prices</li>
+                <li>Fast service</li>
+
+            </ul>
+
+        </section>
+
+
+        <section style="background-color: lightgray; text-align: center;">
+
+            <h2 style="font-size: 28px; color: black;">
+                How to Order
+            </h2>
+
+            <ol style="font-size: 18px; text-align: left;">
+
+                <li>Choose a sneaker</li>
+                <li>Contact us</li>
+                <li>Give us your information</li>
+                <li>Receive your order</li>
+
+            </ol>
+
+        </section>
+
+    </main>
+
+
+    <footer style="background-color: black; color: white; text-align: center;">
+
+        <p style="font-size: 16px;">
+        </p>
+
+    </footer>
+
+</body>
+</html>
