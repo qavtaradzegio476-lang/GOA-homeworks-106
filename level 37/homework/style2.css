@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px gray;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: blue;
+}
+
+h4 {
+    color: silver;
+}
+
+h5 {
+    color: orange;
+}
+
+h6 {
+    color: red;
+}
+
+div {
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px gray;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px gray;
+}
+
+button {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px gray;
+}
